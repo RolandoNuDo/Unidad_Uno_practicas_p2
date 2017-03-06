@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_6_ASSETS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMS-GU-q6N">
+                                <rect key="frame" x="210" y="395" width="181" height="33"/>
+                                <animations/>
+                                <state key="normal" title="Mi Boton" backgroundImage="button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="moradobutton"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="plat1_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gxK-HV-hnN">
+                                <rect key="frame" x="237" y="28" width="127" height="75"/>
+                                <animations/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="AEg-KA-eHm">
+                                <rect key="frame" x="18" y="503" width="564" height="31"/>
+                                <animations/>
+                                <connections>
+                                    <action selector="miValor:" destination="BYZ-38-t0r" eventType="valueChanged" id="uJX-Bg-3bU"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c50-tD-Hsd">
+                                <rect key="frame" x="279" y="154" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yMS-GU-q6N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="526-J1-Bjf"/>
+                            <constraint firstItem="AEg-KA-eHm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KtJ-lH-6bS"/>
+                            <constraint firstItem="gxK-HV-hnN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MJ0-cf-wHM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AEg-KA-eHm" secondAttribute="bottom" constant="67" id="Mq5-W5-DTy"/>
+                            <constraint firstItem="yMS-GU-q6N" firstAttribute="top" secondItem="c50-tD-Hsd" secondAttribute="bottom" constant="220" id="Xl2-bV-JrA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="AEg-KA-eHm" secondAttribute="leading" id="g7a-UQ-xlt"/>
+                            <constraint firstItem="gxK-HV-hnN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="k9E-76-1y7"/>
+                            <constraint firstItem="c50-tD-Hsd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ogB-Hh-7O9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AEg-KA-eHm" secondAttribute="trailing" id="rYF-JX-en1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblValor" destination="c50-tD-Hsd" id="ULN-dO-OWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button" width="33" height="33"/>
+        <image name="moradobutton" width="33" height="32"/>
+        <image name="plat1_logo" width="100" height="100"/>
+    </resources>
+</document>

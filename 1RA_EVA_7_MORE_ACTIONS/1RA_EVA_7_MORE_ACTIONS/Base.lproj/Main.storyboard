@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_RA_EVA_7_MORE_ACTIONS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vijinx" translatesAutoresizingMaskIntoConstraints="NO" id="Htv-pW-8v3">
+                                <rect key="frame" x="180" y="28" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="V5h-Ma-xMo"/>
+                                    <constraint firstAttribute="height" constant="128" id="YbL-ha-kGj"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Nombre:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sv-O7-gnl">
+                                <rect key="frame" x="20" y="220" width="126" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7a7-HQ-p4C">
+                                <rect key="frame" x="166" y="285" width="414" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66206494810118821" green="1" blue="0.58729822969786882" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="jTF-Iy-2Jx"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Edad:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXo-xX-Lkf">
+                                <rect key="frame" x="28" y="288" width="118" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="Ph7-yx-l3l"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wbp-lZ-6Cq">
+                                <rect key="frame" x="20" y="63" width="46" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q5G-im-FVm">
+                                <rect key="frame" x="166" y="217" width="414" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.66206494810118821" green="1" blue="0.58729822969786882" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="lIJ-qY-E3q"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Htv-pW-8v3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="0eK-X3-9iN"/>
+                            <constraint firstItem="7a7-HQ-p4C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="37d-aD-pXX"/>
+                            <constraint firstItem="q5G-im-FVm" firstAttribute="leading" secondItem="5sv-O7-gnl" secondAttribute="trailing" constant="20" id="3Lq-U5-exo"/>
+                            <constraint firstItem="7a7-HQ-p4C" firstAttribute="leading" secondItem="q5G-im-FVm" secondAttribute="leading" id="7ER-gD-zRh"/>
+                            <constraint firstItem="7a7-HQ-p4C" firstAttribute="trailing" secondItem="q5G-im-FVm" secondAttribute="trailing" id="Jak-R2-zEY"/>
+                            <constraint firstItem="Htv-pW-8v3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PDU-S3-Iis"/>
+                            <constraint firstItem="PXo-xX-Lkf" firstAttribute="width" secondItem="5sv-O7-gnl" secondAttribute="width" id="Pbj-3f-dDk"/>
+                            <constraint firstItem="q5G-im-FVm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ams-xr-BMg"/>
+                            <constraint firstItem="7a7-HQ-p4C" firstAttribute="baseline" secondItem="PXo-xX-Lkf" secondAttribute="baseline" id="be5-ar-hqq"/>
+                            <constraint firstItem="7a7-HQ-p4C" firstAttribute="top" secondItem="q5G-im-FVm" secondAttribute="bottom" constant="35" id="cGA-9p-rPy"/>
+                            <constraint firstItem="5sv-O7-gnl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ra1-h3-FBa"/>
+                            <constraint firstItem="5sv-O7-gnl" firstAttribute="trailing" secondItem="PXo-xX-Lkf" secondAttribute="trailing" id="uSS-AG-2Gd"/>
+                            <constraint firstItem="5sv-O7-gnl" firstAttribute="top" secondItem="q5G-im-FVm" secondAttribute="top" id="ueJ-zt-yLr"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6iY-XV-GnO" appends="YES" id="cYS-Eo-ZbK"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="edad" destination="7a7-HQ-p4C" id="w9f-rk-z8P"/>
+                        <outlet property="nombre" destination="q5G-im-FVm" id="s46-co-nRz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6iY-XV-GnO">
+                    <connections>
+                        <action selector="tapGest:" destination="BYZ-38-t0r" id="oav-7Q-yhQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vijinx" width="1920" height="1080"/>
+    </resources>
+</document>
